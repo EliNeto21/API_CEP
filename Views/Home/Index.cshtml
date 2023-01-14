@@ -1,0 +1,216 @@
+﻿@{
+    @using Model;
+
+    var dadosCEP = new DadosCEP();
+
+    dadosCEP = ViewBag.dadosCEP;
+
+    string html = "";
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    <style>
+        body {
+            overflow-y: auto;
+        }
+
+        .modal-jl {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100% !important;
+            height: 100% !important;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .area-upload input {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            -webkit-appearance: none;
+            opacity: 0;
+        }
+
+        .area-upload {
+            width: 100%;
+            position: relative;
+        }
+
+            .area-upload label.label-upload {
+                border: 2px dashed #0d8acd;
+                min-height: 200px;
+                text-align: center;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                color: #0d8acd;
+                position: relative;
+                -webkit-transition: .3s all;
+                -moz-transition: .3s all;
+                -o-transition: .3s all;
+                transition: .3s all;
+            }
+
+                .area-upload label.label-upload * {
+                    pointer-events: none;
+                }
+
+        .areaHove:hover {
+            background-color: #8fc5ff !important;
+        }
+
+        .bg-primary {
+            background-color: #092847 !important;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="container p-4 shadow mt-3 bg-light">
+        <div class="w-100 text-light bg-primary text-light p-2 rounded ">
+            <h4 class="ml-2">Consulta CEP</h4>
+        </div>
+        <div class="container pt-3">
+            <div class="row">
+                <form id="upload" action="/Upload/?" method="post" class="w-100" enctype="multipart/form-data">
+                    <div class="col-md-12">
+                        <div class="card-body" style="padding-bottom: 0px">
+                            <div class="row">
+                                <div class="input-form-group col-md-6" style="padding-bottom: 0px">
+                                    <div class="form-group">
+                                        <label for="idcep"><i class="fa fa-list-ul"></i> CEP </label>
+                                        <input id="cep" class="form-control" min="0" name="cep" required />
+                                    </div>
+                                </div>
+
+                                <div class="input-form-group col-md-6" style="padding-bottom: 0px">
+                                    <div class="form-group">
+                                        <label for="idResponsavel"><i class="fa fa-list-ul"></i> Cidade </label>
+                                        @{
+                                            html = "";
+
+                                            if (dadosCEP.State != null)
+                                            {
+                                                html = $"<input id='cidade' class='form-control' min='0' name='cidade' value='{@dadosCEP.City}'/>";
+                                            }
+                                            else
+                                            {
+                                                html = $"<input id='cidade' class='form-control' min='0' name='cidade' value='' disabled=''/>";
+
+                                            }
+
+                                            @Html.Raw(html)
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="card-body" style="padding-bottom: 0px">
+                            <div class="row">
+                                <div class="input-form-group col-md-6" style="padding-bottom: 0px">
+                                    <div class="form-group">
+                                        <label for="idEstado"><i class="fa fa-edit"></i> Estado </label>
+                                        @{
+                                            html = "";
+
+                                            if (dadosCEP.State != null)
+                                            {
+                                                html = $"<input id='estado' class='form-control' min='0' name='estado' value='{@dadosCEP.State}'/>";
+                                            }
+                                            else
+                                            {
+                                                html = $"<input id='estado' class='form-control' min='0' name='estado' value='' disabled=''/>";
+                                            }
+
+                                            @Html.Raw(html)
+                                        }
+                                    </div>
+                                </div>
+
+                                <div class="input-form-group col-md-6" style="padding-bottom: 0px">
+                                    <div class="form-group">
+                                        <label for="idBairro"><i class="fa fa-list-ul"></i> Bairro </label>
+                                        @{
+                                            html = "";
+
+                                            if (dadosCEP.State != null)
+                                            {
+                                                html = $"<input id='bairro' class='form-control' min='0' name='bairro' value='{@dadosCEP.District}'/>";
+                                            }
+                                            else
+                                            {
+                                                html = $"<input id='bairro' class='form-control' min='0' name='bairro' value='' disabled=''/>";
+                                            }
+
+                                            @Html.Raw(html)
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="input-form-group col-md-6" style="padding-bottom: 0px">
+                                    <label for="idEndereco"><i class="fa fa-list-ul"></i> Endereço </label>
+                                    @{
+                                        html = "";
+
+                                        if (dadosCEP.State != null)
+                                        {
+                                            html = $"<input id='endereco' class='form-control' min='0' name='endereco' value='{@dadosCEP.Address}'/>";
+                                        }
+                                        else
+                                        {
+                                            html = $"<input id='endereco' class='form-control' min='0' name='endereco' value='' disabled=''/>";
+                                        }
+
+                                        @Html.Raw(html)
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <a id="consultaBtn" onclick="enviaCEP()" class="btn btn-success text-decoration-none text-light"><strong>Consultar</strong></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    function enviaCEP() {
+        var nrCEP = document.getElementById('cep').value;
+
+        var ajax = new XMLHttpRequest();
+        ajax.open('POST', '/Home?nrCEP=' + nrCEP);
+        ajax.send();
+    }
+
+</script>
