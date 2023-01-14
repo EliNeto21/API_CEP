@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "9rJTyczZDlgZJb066i/Mqq8dQ+oR0MABbZTCTiqSAZyNfNmGM6GBfOb2NFfRi0QgiyBkt8MkZH7PgGvoZ2y0yQ==",
+  "success": true,
+  "projectFilePath": "C:\\DEV\\TratamentoDados\\TratamentoDados.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Eli Neto\\.nuget\\packages\\bond.core.csharp\\10.0.0\\bond.core.csharp.10.0.0.nupkg.sha512",
+    "C:\\Users\\Eli Neto\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\Eli Neto\\.nuget\\packages\\restsharp\\106.6.2\\restsharp.106.6.2.nupkg.sha512"
+  ],
+  "logs": []
+}

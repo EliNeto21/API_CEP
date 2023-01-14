@@ -1,0 +1,15 @@
+C:\DEV\TratamentoDados\bin\Debug\net5.0\TratamentoDados.deps.json
+C:\DEV\TratamentoDados\bin\Debug\net5.0\TratamentoDados.dll
+C:\DEV\TratamentoDados\bin\Debug\net5.0\ref\TratamentoDados.dll
+C:\DEV\TratamentoDados\bin\Debug\net5.0\TratamentoDados.pdb
+C:\DEV\TratamentoDados\bin\Debug\net5.0\Model.dll
+C:\DEV\TratamentoDados\bin\Debug\net5.0\Model.pdb
+C:\DEV\TratamentoDados\obj\Debug\net5.0\TratamentoDados.csprojAssemblyReference.cache
+C:\DEV\TratamentoDados\obj\Debug\net5.0\TratamentoDados.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV\TratamentoDados\obj\Debug\net5.0\TratamentoDados.AssemblyInfoInputs.cache
+C:\DEV\TratamentoDados\obj\Debug\net5.0\TratamentoDados.AssemblyInfo.cs
+C:\DEV\TratamentoDados\obj\Debug\net5.0\TratamentoDados.csproj.CoreCompileInputs.cache
+C:\DEV\TratamentoDados\obj\Debug\net5.0\TratamentoDados.csproj.CopyComplete
+C:\DEV\TratamentoDados\obj\Debug\net5.0\TratamentoDados.dll
+C:\DEV\TratamentoDados\obj\Debug\net5.0\ref\TratamentoDados.dll
+C:\DEV\TratamentoDados\obj\Debug\net5.0\TratamentoDados.pdb

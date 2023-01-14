@@ -1,0 +1,254 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Bond.Core.CSharp/10.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.6/Bond.Attributes.dll": {},
+          "lib/netstandard1.6/Bond.IO.dll": {},
+          "lib/netstandard1.6/Bond.Reflection.dll": {},
+          "lib/netstandard1.6/Bond.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Bond.Attributes.dll": {},
+          "lib/netstandard1.6/Bond.IO.dll": {},
+          "lib/netstandard1.6/Bond.Reflection.dll": {},
+          "lib/netstandard1.6/Bond.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "RestSharp/106.6.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
+      "Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Bond.Core.CSharp/10.0.0": {
+      "sha512": "tybkI7nGBblx/+azotfPVpHhBNW0EsU1D+JSubm4EX7K3xPau88ztkO+o6kiQ37dAKWWa1hxLU6ivQQvkE6mdw==",
+      "type": "package",
+      "path": "bond.core.csharp/10.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bond.core.csharp.10.0.0.nupkg.sha512",
+        "bond.core.csharp.nuspec",
+        "images/bond-logo-64x64-transparent.png",
+        "lib/net45/Bond.Attributes.dll",
+        "lib/net45/Bond.Attributes.pdb",
+        "lib/net45/Bond.Attributes.xml",
+        "lib/net45/Bond.IO.dll",
+        "lib/net45/Bond.IO.pdb",
+        "lib/net45/Bond.IO.xml",
+        "lib/net45/Bond.Reflection.dll",
+        "lib/net45/Bond.Reflection.pdb",
+        "lib/net45/Bond.Reflection.xml",
+        "lib/net45/Bond.dll",
+        "lib/net45/Bond.pdb",
+        "lib/net45/Bond.xml",
+        "lib/net46/Bond.Attributes.dll",
+        "lib/net46/Bond.Attributes.pdb",
+        "lib/net46/Bond.Attributes.xml",
+        "lib/net46/Bond.IO.dll",
+        "lib/net46/Bond.IO.pdb",
+        "lib/net46/Bond.IO.xml",
+        "lib/net46/Bond.Reflection.dll",
+        "lib/net46/Bond.Reflection.pdb",
+        "lib/net46/Bond.Reflection.xml",
+        "lib/net46/Bond.dll",
+        "lib/net46/Bond.pdb",
+        "lib/net46/Bond.xml",
+        "lib/netstandard1.0/Bond.Attributes.dll",
+        "lib/netstandard1.0/Bond.Attributes.pdb",
+        "lib/netstandard1.0/Bond.Attributes.xml",
+        "lib/netstandard1.0/Bond.Reflection.dll",
+        "lib/netstandard1.0/Bond.Reflection.pdb",
+        "lib/netstandard1.0/Bond.Reflection.xml",
+        "lib/netstandard1.0/Bond.dll",
+        "lib/netstandard1.0/Bond.pdb",
+        "lib/netstandard1.0/Bond.xml",
+        "lib/netstandard1.3/Bond.Attributes.dll",
+        "lib/netstandard1.3/Bond.Attributes.pdb",
+        "lib/netstandard1.3/Bond.Attributes.xml",
+        "lib/netstandard1.3/Bond.IO.dll",
+        "lib/netstandard1.3/Bond.IO.pdb",
+        "lib/netstandard1.3/Bond.IO.xml",
+        "lib/netstandard1.3/Bond.Reflection.dll",
+        "lib/netstandard1.3/Bond.Reflection.pdb",
+        "lib/netstandard1.3/Bond.Reflection.xml",
+        "lib/netstandard1.3/Bond.dll",
+        "lib/netstandard1.3/Bond.pdb",
+        "lib/netstandard1.3/Bond.xml",
+        "lib/netstandard1.6/Bond.Attributes.dll",
+        "lib/netstandard1.6/Bond.Attributes.pdb",
+        "lib/netstandard1.6/Bond.Attributes.xml",
+        "lib/netstandard1.6/Bond.IO.dll",
+        "lib/netstandard1.6/Bond.IO.pdb",
+        "lib/netstandard1.6/Bond.IO.xml",
+        "lib/netstandard1.6/Bond.Reflection.dll",
+        "lib/netstandard1.6/Bond.Reflection.pdb",
+        "lib/netstandard1.6/Bond.Reflection.xml",
+        "lib/netstandard1.6/Bond.dll",
+        "lib/netstandard1.6/Bond.pdb",
+        "lib/netstandard1.6/Bond.xml"
+      ]
+    },
+    "Newtonsoft.Json/13.0.2": {
+      "sha512": "R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "RestSharp/106.6.2": {
+      "sha512": "aEzHTbNrY1irKCW72B/kG6aLJQb7B65sc+WPJsnuQGYQq4UySvItlk4tKp8XfZcfG3m9mYzancFjLH2NAEQdWw==",
+      "type": "package",
+      "path": "restsharp/106.6.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.106.6.2.nupkg.sha512",
+        "restsharp.nuspec"
+      ]
+    },
+    "Model/1.0.0": {
+      "type": "project",
+      "path": "../Model/Model.csproj",
+      "msbuildProject": "../Model/Model.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Bond.Core.CSharp >= 10.0.0",
+      "Model >= 1.0.0",
+      "Newtonsoft.Json >= 13.0.2",
+      "RestSharp >= 106.6.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Eli Neto\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\DEV\\TratamentoDados\\TratamentoDados.csproj",
+      "projectName": "TratamentoDados",
+      "projectPath": "C:\\DEV\\TratamentoDados\\TratamentoDados.csproj",
+      "packagesPath": "C:\\Users\\Eli Neto\\.nuget\\packages\\",
+      "outputPath": "C:\\DEV\\TratamentoDados\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Eli Neto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\DEV\\Model\\Model.csproj": {
+              "projectPath": "C:\\DEV\\Model\\Model.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "Bond.Core.CSharp": {
+            "target": "Package",
+            "version": "[10.0.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.2, )"
+          },
+          "RestSharp": {
+            "target": "Package",
+            "version": "[106.6.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
